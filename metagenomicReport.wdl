@@ -16,7 +16,7 @@ input {
   meta {
     author: "Peter Ruzanov"
     email: "pruzanov@oicr.on.ca"
-    description: "A workflow for checking Fastq files for possible contamination with reads from species other than human, primarily cell culture samples"
+    description: "Checking fastq files for presence of reads from species other than human\n\n![Workflow Diagram for metagenomicReport](docs/MR_WorkflowDiagram.png)"
     dependencies: [
       {
         name: "kraken2/2.0.8",
@@ -123,15 +123,15 @@ task brackenReport {
   }
 
   command <<<
+   set -euo pipefail
    bracken -d ~{krakenDb} -i ~{sample} -i ~{krakenReport} -o ~{sample}.bracken -r ~{readLength} -l ~{classLevel} -t ~{threshold}
 
    python3<<CODE
    import json
-   import json
 
-   report_file = ~{sample}.bracken
-   json_name = ~{sample}_brackenReport.json
-   sampleName = ~{sample}
+   report_file = "~{sample}.bracken"
+   json_name = "~{sample}_brackenReport.json"
+   sampleName = "~{sample}"
    jsonDict = {sampleName: []}
    header = []
    limit = ~{minRatio}    # minimum read fraction to consider as contamination
