@@ -27,12 +27,17 @@
             },
             "metagenomicReport.outputPrefix": "OS25_EV",
             "metagenomicReport.brackenReport.readLength": 100,
+            "metagenomicReport.brackenReport.classLevel": null,
+            "metagenomicReport.brackenReport.threshold": null,
+            "metagenomicReport.brackenReport.timeout": null,
             "metagenomicReport.brackenReport.jobMemory": 20,
             "metagenomicReport.brackenReport.minRatio": 0.03,
             "metagenomicReport.brackenReport.modules": "bracken/2.7 kraken2-pluspf-database/1",
             "metagenomicReport.brackenReport.krakenDb": "$KRAKEN2_PLUSPF_DATABASE_ROOT",
             "metagenomicReport.krakenReport.modules": "kraken2/2.0.8 kraken2-pluspf-database/1",
-            "metagenomicReport.krakenReport.krakenDb": "$KRAKEN2_PLUSPF_DATABASE_ROOT"
+            "metagenomicReport.krakenReport.krakenDb": "$KRAKEN2_PLUSPF_DATABASE_ROOT",
+            "metagenomicReport.krakenReport.jobMemory": null
+            "metagenomicReport.krakenReport.timeout": null
         },
         "description": "Metagenomic Report workflow test with OS25_EV sample",
         "engineArguments": {
@@ -95,12 +100,17 @@
             },
             "metagenomicReport.outputPrefix": "CHLA9_EV",
             "metagenomicReport.brackenReport.readLength": 100,
+            "metagenomicReport.brackenReport.classLevel": null,
+            "metagenomicReport.brackenReport.threshold": null,
+            "metagenomicReport.brackenReport.timeout": null,
             "metagenomicReport.brackenReport.jobMemory": 20,
             "metagenomicReport.brackenReport.minRatio": 0.03,
             "metagenomicReport.brackenReport.modules": "bracken/2.7 kraken2-pluspf-database/1",
             "metagenomicReport.brackenReport.krakenDb": "$KRAKEN2_PLUSPF_DATABASE_ROOT",
             "metagenomicReport.krakenReport.modules": "kraken2/2.0.8 kraken2-pluspf-database/1",
-            "metagenomicReport.krakenReport.krakenDb": "$KRAKEN2_PLUSPF_DATABASE_ROOT"
+            "metagenomicReport.krakenReport.krakenDb": "$KRAKEN2_PLUSPF_DATABASE_ROOT",
+            "metagenomicReport.krakenReport.jobMemory": null
+            "metagenomicReport.krakenReport.timeout": null
         },
         "description": "Metagenomic Report workflow test with CHLA9_EV sample",
         "engineArguments": {
