@@ -46,7 +46,7 @@
         },
         "id": "OS25_EV_REPORT",
         "metadata": {
-            "metagenomicReport.brackenReport": {
+            "metagenomicReport.textReport": {
                 "contents": [
                     {
                         "outputDirectory": "@SCRATCH@/@DATE@_Workflow_metagenomicReport_OS25_EV_REPORT_@JENKINSID@"
@@ -119,7 +119,7 @@
         },
         "id": "CHLA9_EV_REPORT",
         "metadata": {
-            "metagenomicReport.brackenReport": {
+            "metagenomicReport.textReport": {
                 "contents": [
                     {
                         "outputDirectory": "@SCRATCH@/@DATE@_Workflow_metagenomicReport_CHLA9_EV_REPORT_@JENKINSID@"
