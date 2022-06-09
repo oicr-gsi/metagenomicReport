@@ -98,7 +98,7 @@ task krakenReport {
 task brackenReport {
   input {
     File krakenReport
-    String modules  = "kraken2/2.0.8 kraken2-pluspf-database/1"
+    String modules  = "bracken/2.7 kraken2-pluspf-database/1"
     String krakenDb = "$KRAKEN2_PLUSPF_DATABASE_ROOT/"
     String sample
     String classLevel = "S"
