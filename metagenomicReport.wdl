@@ -72,8 +72,8 @@ task krakenReport {
     fastqR2: "R2"
     sample: "Sample identifier"
     timeout: "Timeout in hours for this task"
-    jobMemory: "Java memory for Picard"
-    modules: "Names and versions of modules needed for variant calling"
+    jobMemory: "Java memory for Kraken"
+    modules: "Names and versions of modules needed for read classification"
     krakenDb: "Path to bracken/kraken db" 
   }
 
@@ -116,8 +116,8 @@ task brackenReport {
     readLength: "Expected read length"
     threshold: "minimum number of reads required for a classification"
     timeout: "Timeout in hours for this task"
-    jobMemory: "Java memory for Picard"
-    modules: "Names and versions of modules needed for variant calling"
+    jobMemory: "Java memory for Bracken"
+    modules: "Names and versions of modules needed for read ratio estimation"
     minRatio: "Threshold for reporting species, minimum read proportion in the analyzed sample"
     krakenDb: "Path to bracken/kraken db"
   }

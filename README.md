@@ -28,26 +28,20 @@ Parameter|Value|Description
 `fastqR2`|File|Fastq R2
 `outputPrefix`|String|Output is, usually sample name
 
-
-#### Optional workflow parameters:
-Parameter|Value|Default|Description
----|---|---|---
-
-
 #### Optional task parameters:
 Parameter|Value|Default|Description
 ---|---|---|---
-`krakenReport.modules`|String|"kraken2/2.0.8 kraken2-pluspf-database/1"|Names and versions of modules needed for variant calling
+`krakenReport.modules`|String|"kraken2/2.0.8 kraken2-pluspf-database/1"|Names and versions of modules needed for read classification
 `krakenReport.krakenDb`|String|"$KRAKEN2_PLUSPF_DATABASE_ROOT/"|Path to bracken/kraken db
 `krakenReport.timeout`|Int|24|Timeout in hours for this task
-`krakenReport.jobMemory`|Int|20|Java memory for Picard
-`brackenReport.modules`|String|"kraken2/2.0.8 kraken2-pluspf-database/1"|Names and versions of modules needed for variant calling
+`krakenReport.jobMemory`|Int|20|Java memory for Kraken
+`brackenReport.modules`|String|"bracken/2.7 kraken2-pluspf-database/1"|Names and versions of modules needed for read ratio estimation
 `brackenReport.krakenDb`|String|"$KRAKEN2_PLUSPF_DATABASE_ROOT/"|Path to bracken/kraken db
 `brackenReport.classLevel`|String|"S"|Classification level, default S (species)
 `brackenReport.readLength`|Int|100|Expected read length
 `brackenReport.threshold`|Int|10|minimum number of reads required for a classification
 `brackenReport.timeout`|Int|24|Timeout in hours for this task
-`brackenReport.jobMemory`|Int|20|Java memory for Picard
+`brackenReport.jobMemory`|Int|20|Java memory for Bracken
 `brackenReport.minRatio`|Float|0.03|Threshold for reporting species, minimum read proportion in the analyzed sample
 
 
