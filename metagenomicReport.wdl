@@ -63,6 +63,7 @@ task krakenReport {
     File fastqR1
     File fastqR2
     String sample
+    String krakenOut = "/dev/null"
     Int timeout = 24
     Int jobMemory = 20
   }
@@ -74,11 +75,12 @@ task krakenReport {
     timeout: "Timeout in hours for this task"
     jobMemory: "Java memory for Kraken"
     modules: "Names and versions of modules needed for read classification"
-    krakenDb: "Path to bracken/kraken db" 
+    krakenDb: "Path to bracken/kraken db"
+    krakenOut: "Redirect kraken2 output, default is /dev/null"
   }
 
   command <<<
-   kraken2 --paired ~{fastqR1} ~{fastqR2} --db ~{krakenDb} --report ~{sample}.kreport2.txt
+   kraken2 --paired ~{fastqR1} ~{fastqR2} --db ~{krakenDb} --report ~{sample}.kreport2.txt --output ~{krakenOut}
   >>>
   
   runtime {
@@ -134,7 +136,7 @@ task brackenReport {
    sampleName = "~{sample}"
    jsonDict = {sampleName: []}
    header = []
-   limit = ~{minRatio}    # minimum read fraction to consider as contamination
+   limit = ~{minRatio} 
 
    """For Bracken, we need fields 2,4,5,6 to be int and 7 - float type"""
    def typeCast(reportString):

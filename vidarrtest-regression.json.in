@@ -37,6 +37,7 @@
             "metagenomicReport.krakenReport.modules": "kraken2/2.0.8 kraken2-pluspf-database/1",
             "metagenomicReport.krakenReport.krakenDb": "$KRAKEN2_PLUSPF_DATABASE_ROOT",
             "metagenomicReport.krakenReport.jobMemory": null,
+            "metagenomicReport.krakenReport.krakenOut": null,
             "metagenomicReport.krakenReport.timeout": null
         },
         "description": "Metagenomic Report workflow test with OS25_EV sample",
@@ -109,6 +110,7 @@
             "metagenomicReport.brackenReport.krakenDb": "$KRAKEN2_PLUSPF_DATABASE_ROOT",
             "metagenomicReport.krakenReport.modules": "kraken2/2.0.8 kraken2-pluspf-database/1",
             "metagenomicReport.krakenReport.krakenDb": "$KRAKEN2_PLUSPF_DATABASE_ROOT",
+            "metagenomicReport.krakenReport.krakenOut": null,
             "metagenomicReport.krakenReport.jobMemory": null,
             "metagenomicReport.krakenReport.timeout": null
         },

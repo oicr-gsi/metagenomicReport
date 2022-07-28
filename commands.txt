@@ -10,7 +10,7 @@ Kraken2 accepts paired fatq files and runs classificatiion of reads using k-mer 
 various bacterial, fungal, protozoan and viral species.
 
 '''
-   kraken2 --paired ~{fastqR1} ~{fastqR2} --db ~{krakenDb} --report ~{sample}.kreport2.txt
+   kraken2 --paired ~{fastqR1} ~{fastqR2} --db ~{krakenDb} --report ~{sample}.kreport2.txt --output /dev/null
 '''
 
 ### Bracken
