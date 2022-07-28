@@ -126,7 +126,7 @@ task brackenReport {
 
   command <<<
    set -euo pipefail
-   bracken -d ~{krakenDb} -i ~{sample} -i ~{krakenReport} -o ~{sample}.bracken -r ~{readLength} -l ~{classLevel} -t ~{threshold}
+   bracken -d ~{krakenDb} -i ~{krakenReport} -o ~{sample}.bracken -r ~{readLength} -l ~{classLevel} -t ~{threshold}
 
    python3<<CODE
    import json
