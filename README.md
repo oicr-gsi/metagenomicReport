@@ -67,7 +67,10 @@ various bacterial, fungal, protozoan and viral species.
 
 ```
 
-kraken2 --paired ~{fastqR1} ~{fastqR2} --db ~{krakenDb} --report ~{sample}.kreport2.txt --output /dev/null
+kraken2 --paired FASTQ_R1 FASTQ_R2 
+        --db KRAKEN_DB 
+        --report SAMPLE.kreport2.txt 
+        --output /dev/null
 
 ```
 
@@ -80,7 +83,12 @@ to estimate the number of reads originating from each species present in a sampl
 
 ```
 
-bracken -d ~{krakenDb} -i ~{sample} -i ~{krakenReport} -o ~{sample}.bracken -r ~{readLength} -l ~{classLevel} -t ~{threshold}
+bracken -d KRAKEN_DB 
+        -i KRAKEN_REPORT 
+        -o SAMPLE.bracken 
+        -r READ_LENGTH 
+        -l CLASS_LEVEL 
+        -t THRESHOLD
 
 python3<<CODE
 import json
