@@ -16,7 +16,7 @@ input {
   meta {
     author: "Peter Ruzanov"
     email: "pruzanov@oicr.on.ca"
-    description: "Checking fastq files for presence of reads from species other than human\n\n![Workflow Diagram for metagenomicReport](docs/MR_WorkflowDiagram.png)"
+    description: "Checking human NGS reads (fastq files) for the presence of reads from fungi, bacteria or viruses. This analysis employs Kraken2 Database and features an estimate of the percentiage of NGS reads coming from contaminating species with Bracken. This workflow cannot be used to detect contamination with other higher order species (i.e. mouse). The running time of this workflow is short and the file system footprint is insignificant.\n\n![Workflow Diagram for metagenomicReport](docs/MR_WorkflowDiagram.png)"
     dependencies: [
       {
         name: "kraken2/2.0.8",
