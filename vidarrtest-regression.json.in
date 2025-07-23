@@ -3,7 +3,7 @@
         "arguments": {
             "metagenomicReport.fastqR1": {
 		 "contents": {
-		     "configuration": "/.mounts/labs/gsi/testdata/metagenomicReport/input_data/REVRS_0002_01_LB01-01_220426_M06816_0286_000000000-DGHYJ_1_CCGCGGTT-AGCGCTAG_R1.fastq.gz",
+		     "configuration": "/.mounts/labs/gsi/testdata/metagenomicReport/test_inputs/REVRS_Test01_R1.fastq.gz",
 		     "externalIds": [
 			 {
 			     "id": "TEST",
@@ -15,7 +15,7 @@
             },
             "metagenomicReport.fastqR2": {
 		 "contents": {
-		     "configuration": "/.mounts/labs/gsi/testdata/metagenomicReport/input_data/REVRS_0002_01_LB01-01_220426_M06816_0286_000000000-DGHYJ_1_CCGCGGTT-AGCGCTAG_R2.fastq.gz",
+		     "configuration": "/.mounts/labs/gsi/testdata/metagenomicReport/test_inputs/REVRS_Test01_R2.fastq.gz",
 		     "externalIds": [
 			 {
 			     "id": "TEST",
@@ -25,7 +25,7 @@
 		 },
 		"type": "EXTERNAL"
             },
-            "metagenomicReport.outputPrefix": "OS25_EV",
+            "metagenomicReport.outputPrefix": "Test01",
             "metagenomicReport.brackenReport.readLength": 100,
             "metagenomicReport.brackenReport.classLevel": null,
             "metagenomicReport.brackenReport.threshold": null,
@@ -40,17 +40,17 @@
             "metagenomicReport.krakenReport.krakenOut": null,
             "metagenomicReport.krakenReport.timeout": null
         },
-        "description": "Metagenomic Report workflow test with OS25_EV sample",
+        "description": "Metagenomic Report workflow test with REVRS_1 sample",
         "engineArguments": {
            "write_to_cache": false,
            "read_from_cache": false
         },
-        "id": "OS25_EV_REPORT",
+        "id": "Test01_EV_REPORT",
         "metadata": {
             "metagenomicReport.textReport": {
                 "contents": [
                     {
-                        "outputDirectory": "@SCRATCH@/@DATE@_Workflow_metagenomicReport_OS25_EV_REPORT_@JENKINSID@"
+                        "outputDirectory": "@SCRATCH@/@DATE@_Workflow_metagenomicReport_Test01_EV_REPORT_@JENKINSID@"
                     }
                 ],
                 "type": "ALL"
@@ -58,7 +58,7 @@
             "metagenomicReport.jsonReport": {
                 "contents": [
                     {
-                        "outputDirectory": "@SCRATCH@/@DATE@_Workflow_metagenomicReport_OS25_EV_REPORT_@JENKINSID@"
+                        "outputDirectory": "@SCRATCH@/@DATE@_Workflow_metagenomicReport_Test01_EV_REPORT_@JENKINSID@"
                     }
                 ],
                 "type": "ALL"
@@ -68,7 +68,7 @@
             {
                 "metrics_calculate": "@CHECKOUT@/tests/calculate.sh",
                 "metrics_compare": "@CHECKOUT@/tests/compare.sh",
-                "output_metrics": "/.mounts/labs/gsi/testdata/metagenomicReport/output_metrics/OS25_EV_REPORT.metrics",
+                "output_metrics": "/.mounts/labs/gsi/testdata/metagenomicReport/output_metrics/workflow_test_01.metrics",
                 "type": "script"
             }
         ]
@@ -77,7 +77,7 @@
         "arguments": {
             "metagenomicReport.fastqR1": {
                  "contents": {
-                     "configuration": "/.mounts/labs/gsi/testdata/metagenomicReport/input_data/REVRS_0007_01_LB01-01_220426_M06816_0286_000000000-DGHYJ_1_AAGTCCAA-TATGAGTA_R1.fastq.gz",
+                     "configuration": "/.mounts/labs/gsi/testdata/metagenomicReport/test_inputs/REVRS_Test02_R1.fastq.gz",
                      "externalIds": [
                          {
                              "id": "TEST",
@@ -89,7 +89,7 @@
             },
             "metagenomicReport.fastqR2": {
                  "contents": {
-                     "configuration": "/.mounts/labs/gsi/testdata/metagenomicReport/input_data/REVRS_0007_01_LB01-01_220426_M06816_0286_000000000-DGHYJ_1_AAGTCCAA-TATGAGTA_R2.fastq.gz",
+                     "configuration": "/.mounts/labs/gsi/testdata/metagenomicReport/test_inputs/REVRS_Test02_R2.fastq.gz",
                      "externalIds": [
                          {
                              "id": "TEST",
@@ -99,7 +99,7 @@
                  },
                 "type": "EXTERNAL"
             },
-            "metagenomicReport.outputPrefix": "CHLA9_EV",
+            "metagenomicReport.outputPrefix": "Test02",
             "metagenomicReport.brackenReport.readLength": 100,
             "metagenomicReport.brackenReport.classLevel": null,
             "metagenomicReport.brackenReport.threshold": null,
@@ -114,17 +114,17 @@
             "metagenomicReport.krakenReport.jobMemory": null,
             "metagenomicReport.krakenReport.timeout": null
         },
-        "description": "Metagenomic Report workflow test with CHLA9_EV sample",
+        "description": "Metagenomic Report workflow test with REVRS_2 sample",
         "engineArguments": {
            "write_to_cache": false,
            "read_from_cache": false
         },
-        "id": "CHLA9_EV_REPORT",
+        "id": "Test02_EV_REPORT",
         "metadata": {
             "metagenomicReport.textReport": {
                 "contents": [
                     {
-                        "outputDirectory": "@SCRATCH@/@DATE@_Workflow_metagenomicReport_CHLA9_EV_REPORT_@JENKINSID@"
+                        "outputDirectory": "@SCRATCH@/@DATE@_Workflow_metagenomicReport_Test02_EV_REPORT_@JENKINSID@"
                     }
                 ],
                 "type": "ALL"
@@ -132,7 +132,7 @@
             "metagenomicReport.jsonReport": {
                 "contents": [
                     {
-                        "outputDirectory": "@SCRATCH@/@DATE@_Workflow_metagenomicReport_CHLA9_EV_REPORT_@JENKINSID@"
+                        "outputDirectory": "@SCRATCH@/@DATE@_Workflow_metagenomicReport_Test02_EV_REPORT_@JENKINSID@"
                     }
                 ],
                 "type": "ALL"
@@ -142,7 +142,7 @@
             {
                 "metrics_calculate": "@CHECKOUT@/tests/calculate.sh",
                 "metrics_compare": "@CHECKOUT@/tests/compare.sh",
-                "output_metrics": "/.mounts/labs/gsi/testdata/metagenomicReport/output_metrics/CHLA9_EV_REPORT.metrics",
+                "output_metrics": "/.mounts/labs/gsi/testdata/metagenomicReport/output_metrics/workflow_test_02.metrics",
                 "type": "script"
             }
         ]
