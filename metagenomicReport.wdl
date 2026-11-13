@@ -19,7 +19,7 @@ input {
     description: "Checking human NGS reads (fastq files) for the presence of reads from fungi, bacteria or viruses. This analysis employs Kraken2 Database and features an estimate of the percentiage of NGS reads coming from contaminating species with Bracken. This workflow cannot be used to detect contamination with other higher order species (i.e. mouse). The running time of this workflow is short and the file system footprint is insignificant.\n\n![Workflow Diagram for metagenomicReport](docs/MR_WorkflowDiagram.png)"
     dependencies: [
       {
-        name: "kraken2/2.0.8",
+        name: "kraken2/2.18.0-rc2",
         url:  "https://ccb.jhu.edu/software/bracken/index.shtml"
       },
       {
@@ -64,7 +64,7 @@ input {
 # ========================================
 task krakenReport {
   input {
-    String modules  = "kraken2/2.0.8 kraken2-pluspf-database/1"
+    String modules  = "kraken2/2.18.0-rc2 kraken2-pluspf-database/1"
     String krakenDb = "$KRAKEN2_PLUSPF_DATABASE_ROOT/"
     File fastqR1
     File fastqR2
