@@ -8,7 +8,7 @@ A workflow for checking Fastq files for possible contamination with reads from s
 
 ## Dependencies
 
-* [kraken2 2.0.8](https://ccb.jhu.edu/software/bracken/index.shtml)
+* [kraken2 2.18.0-rc2](https://ccb.jhu.edu/software/bracken/index.shtml)
 * [bracken 2.7](https://ccb.jhu.edu/software/bracken/index.shtml)
 
 
