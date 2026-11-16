@@ -31,7 +31,7 @@ Parameter|Value|Description
 #### Optional task parameters:
 Parameter|Value|Default|Description
 ---|---|---|---
-`krakenReport.modules`|String|"kraken2/2.0.8 kraken2-pluspf-database/1"|Names and versions of modules needed for read classification
+`krakenReport.modules`|String|"kraken2/2.18.0-rc2 kraken2-pluspf-database/1"|Names and versions of modules needed for read classification
 `krakenReport.krakenDb`|String|"$KRAKEN2_PLUSPF_DATABASE_ROOT/"|Path to bracken/kraken db
 `krakenReport.krakenOut`|String|"/dev/null"|Redirect kraken2 output, default is /dev/null
 `krakenReport.timeout`|Int|24|Timeout in hours for this task
